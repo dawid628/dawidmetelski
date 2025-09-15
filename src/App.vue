@@ -1,6 +1,6 @@
 <template>
   <Menu @page-change="currentPage = $event"/>
-  <div class="pt-16">
+  <div>
     <Home v-if="currentPage === 'home'" />
     <About v-if="currentPage === 'about'" />
     <Projects v-if="currentPage === 'projects'" />
