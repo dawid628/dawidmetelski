@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed top-8 md:left-1/2 md:transform md:-translate-x-1/2 z-50">
+  <header class="fixed top-1 md:top-8 md:left-1/2 md:transform md:-translate-x-1/2 z-50">
     <nav>
-      <div class="flex justify-center items-center px-2 py-3 rounded-3xl bg-gray-500/50">
-        <ul class="flex space-x-2 list-none m-0 p-0 text-sm text-zinc-300">
+      <div class="flex justify-center items-center px-2 py-2.5 md:py-3 rounded-3xl bg-gray-500/50">
+        <ul class="flex md:space-x-2 list-none m-0 p-0 text-xs md:text-sm text-zinc-300">
 
           <MenuLink
               @click="changePage('home')"

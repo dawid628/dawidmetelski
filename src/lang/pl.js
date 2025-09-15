@@ -30,5 +30,16 @@ export default {
     },
     ready_for_work: "Dostępny do pracy",
     show: "Pokaż",
-    hide: "Ukryj"
+    hide: "Ukryj",
+    about_me_1: "O ",
+    about_me_2: "mnie",
+    career_1: "Kar",
+    career_2: "iera",
+    about_me_p1: "Od dwóch lat zajmuję się programowaniem webowym i lubię to, co robię – tworzenie aplikacji, które działają 🤥 i ułatwiają ludziom życie 👌.",
+    about_me_p2: "Studiowałem informatykę 🎓, ale najwięcej nauczyła mnie praktyka 😉. Dla rozwoju i zajawy sięgam po nowe rzeczy – blockchain, tworzenie gier, proste aplikacje mobilne 📱- wszystko co mnie zaciekawi i poszerzy moje horyzonty.",
+    about_me_p3: "Po pracy 💻 dbam o rozwój i aktywnie spędzam czas 🤸‍♂️ – książki, siłownia, rower, trochę piłki i biegania, a nawet medytacji 🧘‍♂️. Lubię być na bieżąco z tym, co dzieje się na świecie, więc śledzę wiadomości rynkowe 📉 i polityczne.",
+    about_me_p4: "Potrafię działać samodzielnie, jestem introwertykiem 🫣 i cenię sobie spokój. Oczywiście lubię pracę i kontakt z ludźmi, sprawia mi to nawet przyjemność, tylko w takim trybie moje baterie rozładowują się trochę szybciej 😅.",
+    experience: "Doświadczenie",
+    education: "Wykształcenie",
+    additional_education: "Dodatkowe kwalifikacje"
 };
