@@ -28,7 +28,7 @@ export default {
             description: 'I develop systems that integrate websites and applications with other services and automate business processes, using AI to support operations and analysis.'
         }
     },
-    ready_for_work: "Ready to work",
+    ready_for_work: "Available for work",
     show: "Show",
     hide: "Hide"
 
