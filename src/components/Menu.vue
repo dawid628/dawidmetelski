@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
+  <header class="fixed top-8 md:left-1/2 md:transform md:-translate-x-1/2 z-50">
     <nav>
       <div class="flex justify-center items-center px-2 py-3 rounded-3xl bg-gray-500/50">
         <ul class="flex space-x-2 list-none m-0 p-0 text-sm text-zinc-300">
