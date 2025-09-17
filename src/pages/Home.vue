@@ -85,7 +85,7 @@ const technologies = ref([
   {name: 'React', icon: '<ion-icon name="logo-react" class="text-blue-400"></ion-icon>'},
   {name: 'Flask', icon: '<ion-icon name="logo-python" class="text-yellow-300"></ion-icon>'},
   {name: 'Blockchain', icon: '<ion-icon name="cube-outline" class="text-purple-300"></ion-icon>'},
-  {name: 'Flutter', icon: '<ion-icon name="phone-portrait-outline" class="text-orange-400"></ion-icon>'},
+  {name: 'ASP.NET', icon: '<ion-icon name="globe-outline" class="text-purple-700"></ion-icon>'},
   {name: 'Docker', icon: '<ion-icon name="logo-docker" class="text-blue-600"></ion-icon>'},
 ])
 
