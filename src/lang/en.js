@@ -41,5 +41,43 @@ export default {
     about_me_p4: "I can work independently, I'm an introvert 🫣 and I value peace and quiet. Of course, I enjoy work and interacting with people – it can even be fun – but in that mode, my batteries tend to drain a bit faster 😅.",
     experience: "Experience",
     education: "Education",
-    additional_education: "Certificates"
+    additional_education: "Certificates",
+    view_demo: "Demo",
+    view_code: "Code",
+    in_development: "In development",
+    bachelor_thesis: "Bachelor Thesis",
+    master_thesis: "Master Thesis",
+    download_thesis: "Read",
+    blockchain_repo: "Blockchain",
+    frontend_repo: "Interface",
+    myProjects: {
+        project_2: {
+            title: "Chess",
+            description: "A simple React application that allows playing chess offline. The project focuses on a clear interface and basic game logic."
+        },
+        project_3: {
+            title: "MOND",
+            description: "A project completed while working for a marketing company. It's a podcast website that enables listening to episodes and easily managing content and marketing activities for the brand."
+        },
+        project_4: {
+            title: "Miki Podnosniki",
+            description: "A website created for Miki Lifts, a company specializing in high-altitude services. The site showcases their offerings, range of services, and includes a blog section where the company shares news and industry tips."
+        },
+        project_5: {
+            title: "Smak Tradycji",
+            description: "An online store built for a local meat product seller. It allows browsing the catalog and placing orders online. Developed on the Bagisto platform, it includes custom solutions tailored to the client’s specific needs."
+        },
+        project_6: {
+            title: "Timsy",
+            description: "Timsy is a web application developed since April 2025 by a two-person team. It enables online appointment booking and comprehensive salon management through an admin panel. The project features payment integration, an invoicing system, an AI assistant, and an extensive panel for controlling services, availability, and users."
+        },
+        project_7: {
+            title: "Online Checkers Platform",
+            description: "This project was motivated by an interest in strategy games. It’s a platform that allows online checkers matches between registered users. In addition to the core gameplay, the project includes a blog, user ranking, and a chat between players."
+        },
+        project_8: {
+            title: "Experimental Data Archiving Service",
+            description: "Developed at the initiative of the Warsaw Medical University, the application’s goal is to securely store experimental medical data in compliance with all legal regulations. Data storage is handled via a private blockchain network, with interaction through a GUI built using the Flask framework."
+        }
+    }
 };
