@@ -5,8 +5,8 @@ import './index.css'
 
 // Tłumaczenia
 import { createI18n } from 'vue-i18n'
-import en from './lang/en.js'
-import pl from './lang/pl.js'
+import en from './lang/en.ts'
+import pl from './lang/pl.ts'
 
 const i18n = createI18n({
     legacy: false,

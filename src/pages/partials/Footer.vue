@@ -27,7 +27,7 @@
 
         <div class="space-y-2 text-sm text-slate-300">
           <div>
-            <a :href="`mailto:${email}`" class="hover:text-white transition-colors">
+            <a href="mailto:dawidmetelski00@gmail.com" class="hover:text-white transition-colors">
               dawidmetelski00@gmail.com
             </a>
           </div>

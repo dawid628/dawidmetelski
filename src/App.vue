@@ -37,7 +37,7 @@
       </div>
 
       <div class="energy-field">
-        <div v-for="i in 40" :key="'particle-' + i" class="energy-particle" :style="getParticleStyle(i)"></div>
+        <div v-for="i in 40" :key="'particle-' + i" class="energy-particle" :style="getParticleStyle()"></div>
       </div>
 
       <div class="scan-lines">
@@ -123,7 +123,7 @@ const getStreamStyle = (index: number) => {
   }
 }
 
-const getParticleStyle = (index: number) => {
+const getParticleStyle = () => {
   const size = 2 + Math.random() * 4;
   const delay = Math.random() * 10;
   const duration = 4 + Math.random() * 6;

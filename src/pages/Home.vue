@@ -13,7 +13,7 @@
               </span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div v-for="service in services" :key="services.name"
+              <div v-for="service in services" :key="service.name"
                    class="bg-gray-700/50 hover:bg-purple-700/50 rounded-lg p-4 transition-all hover:scale-105 border border-gray-600/50">
                 <div class="text-center">
                   <div class="text-3xl mb-2" v-html="service.icon"></div>
@@ -92,16 +92,16 @@ const technologies = ref([
   {name: 'Docker', icon: '<ion-icon name="logo-docker" class="text-blue-600"></ion-icon>'},
 ])
 
-const languages = ref([
-  {name: 'PHP', icon: '<ion-icon name="code-outline" class="text-purple-400"></ion-icon>'},
-  {name: 'JavaScript', icon: '<ion-icon name="logo-javascript" class="text-yellow-400"></ion-icon>'},
-  {name: 'TypeScript', icon: '<ion-icon name="logo-nodejs" class="text-blue-500"></ion-icon>'},
-  {name: 'CSS3', icon: '<ion-icon name="logo-css3" class="text-blue-300"></ion-icon>'},
-  {name: 'HTML5', icon: '<ion-icon name="logo-html5" class="text-orange-600"></ion-icon>'},
-  {name: 'Python', icon: '<ion-icon name="logo-python" class="text-green-500"></ion-icon>'},
-  {name: 'C#', icon: '<ion-icon name="logo-apple-ar" class="text-blue-700"></ion-icon>'},
-  {name: 'Java', icon: '<ion-icon name="cafe-outline" class="text-red-700"></ion-icon>'},
-])
+// const languages = ref([
+//   {name: 'PHP', icon: '<ion-icon name="code-outline" class="text-purple-400"></ion-icon>'},
+//   {name: 'JavaScript', icon: '<ion-icon name="logo-javascript" class="text-yellow-400"></ion-icon>'},
+//   {name: 'TypeScript', icon: '<ion-icon name="logo-nodejs" class="text-blue-500"></ion-icon>'},
+//   {name: 'CSS3', icon: '<ion-icon name="logo-css3" class="text-blue-300"></ion-icon>'},
+//   {name: 'HTML5', icon: '<ion-icon name="logo-html5" class="text-orange-600"></ion-icon>'},
+//   {name: 'Python', icon: '<ion-icon name="logo-python" class="text-green-500"></ion-icon>'},
+//   {name: 'C#', icon: '<ion-icon name="logo-apple-ar" class="text-blue-700"></ion-icon>'},
+//   {name: 'Java', icon: '<ion-icon name="cafe-outline" class="text-red-700"></ion-icon>'},
+// ])
 
 const stats = ref([
   {value: '7+', label: 'projects'},
