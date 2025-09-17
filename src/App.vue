@@ -1,5 +1,24 @@
 <template>
-  <div class="app-container">
+  <div class="app-container text-purple-100">
+    <div class="top-0 right-0 z-50 p-4 flex gap-2">
+      <button
+          @click="changeLanguage('pl')"
+          :class="{ 'ring-2 ring-purple-400 bg-purple-900/50': currentLanguage === 'pl' }"
+          class="w-10 h-10 bg-purple-900/30 border-2 border-purple-500/30 rounded-full backdrop-blur-sm hover:border-purple-400 hover:bg-purple-800/40 transition-all duration-300 flex items-center justify-center text-lg"
+          title="Polski"
+      >
+        🇵🇱
+      </button>
+      <button
+          @click="changeLanguage('en')"
+          :class="{ 'ring-2 ring-purple-400 bg-purple-900/50': currentLanguage === 'en' }"
+          class="w-10 h-10 bg-purple-900/30 border-2 border-purple-500/30 rounded-full backdrop-blur-sm hover:border-purple-400 hover:bg-purple-800/40 transition-all duration-300 flex items-center justify-center text-lg"
+          title="English"
+      >
+        🇺🇸
+      </button>
+    </div>
+
     <div class="animated-background">
       <div class="dark-base"></div>
 
@@ -34,13 +53,14 @@
         <About v-if="currentPage === 'about'" />
         <Projects v-if="currentPage === 'projects'" />
       </main>
-      <Footer/>
     </div>
   </div>
+  <Footer/>
 </template>
 
 <script setup lang="ts">
 import {ref} from "vue";
+import { useI18n } from 'vue-i18n';
 
 import Menu from "./components/Menu.vue";
 import Home from "./pages/Home.vue";
@@ -48,9 +68,17 @@ import About from "./pages/About.vue";
 import Projects from "./pages/Projects.vue";
 import Footer from "./pages/partials/Footer.vue";
 
-const currentPage = ref('home')
+const { locale } = useI18n();
+const currentPage = ref('home');
+const currentLanguage = ref(locale.value || 'en');
 
-const chars = '01ABCDEF%HIJ#LMNOPQR!TUVWXYZ</>{}[]()';
+const changeLanguage = (lang: string) => {
+  locale.value = lang;
+  currentLanguage.value = lang;
+  localStorage.setItem('preferred-language', lang);
+}
+
+const chars = '01AB$@EF%HIJ#LMN&PQR!TUVWXYZ</>{}[]()';
 
 const getRandomChar = () => {
   return chars[Math.floor(Math.random() * chars.length)];
@@ -115,7 +143,19 @@ const getParticleStyle = (index: number) => {
 .app-container {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow:
+        0 0 25px rgba(168, 85, 247, 0.6),
+        inset 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+  to {
+    box-shadow:
+        0 0 35px rgba(168, 85, 247, 0.8),
+        inset 0 0 30px rgba(168, 85, 247, 0.4);
+  }
 }
 
 .animated-background {
@@ -381,6 +421,18 @@ const getParticleStyle = (index: number) => {
 }
 
 @media (max-width: 768px) {
+  .language-switcher {
+    top: 15px;
+    right: 15px;
+    gap: 6px;
+  }
+
+  .flag-button {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
   .lightning-bolt {
     height: 100px;
   }

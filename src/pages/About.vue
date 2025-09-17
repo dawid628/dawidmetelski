@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-12">
+  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-2">
     <SideWidget/>
 
     <div class="flex-1 space-y-8">
       <!-- O mnie -->
       <div class="bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 rounded-xl px-4 md:p-8 shadow-2xl">
         <div class="flex items-center gap-4 mb-8">
-          <h2 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
             {{ $t('about_me_1') }}<span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
               {{ $t('about_me_2') }}
             </span>
@@ -15,28 +15,27 @@
         </div>
 
         <div class="prose prose-lg max-w-none">
-          <p class="text-gray-200 leading-relaxed mb-6">
+          <p class="leading-relaxed mb-6">
             {{ $t('hi_i_am') }} <span class="text-orange-400 font-semibold">Dawid 🫡</span>! {{ $t('about_me_p1') }}
           </p>
 
-          <p class="text-gray-300 leading-relaxed mb-6">
+          <p class="leading-relaxed mb-6">
             {{ $t('about_me_p2') }}
           </p>
 
-          <p class="text-gray-300 leading-relaxed mb-6">
+          <p class="leading-relaxed mb-6">
             {{ $t('about_me_p3') }}
           </p>
 
-          <p class="text-gray-300 leading-relaxed">
+          <p class="leading-relaxed">
             {{ $t('about_me_p4') }}
           </p>
         </div>
       </div>
 
-      <!-- Doświadczenia edukacji -->
       <div class="bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 rounded-xl p-4 md:p-8 shadow-2xl">
         <div class="flex items-center gap-4 mb-8">
-          <h3 class="text-3xl lg:text-4xl font-bold text-white leading-tight">
+          <h3 class="text-3xl lg:text-4xl font-bold leading-tight">
             {{ $t('career_1')}}<span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">{{ $t('career_2')}}
             </span>
           </h3>
@@ -45,20 +44,20 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
-            <h4 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+            <h4 class="text-xl font-bold mb-6 flex items-center gap-3">
               <ion-icon name="briefcase-outline" class="text-orange-400 text-2xl"></ion-icon>
               {{ $t('experience') }}
             </h4>
 
             <div class="space-y-4">
               <div v-for="(exp, index) in experiencesCompact" :key="index"
-                   class="bg-gray-700/30 rounded-lg p-4 border border-gray-600/30 hover:bg-gray-700/40 transition-all">
+                   class="bg-gray-700/30 rounded-lg p-4 border border-gray-600/30 hover:bg-purple-700/50 transition-all">
                 <div class="flex items-start justify-between mb-2">
                   <div class="flex-1">
-                    <h5 class="text-white font-semibold">{{ exp.position }}</h5>
+                    <h5 class="font-semibold">{{ exp.position }}</h5>
                     <p class="text-orange-300 text-sm">{{ exp.company }}</p>
                   </div>
-                  <span class="bg-purple-900/50 text-purple-200 px-2 py-1 rounded text-xs ml-3">
+                  <span class="bg-purple-900/50 px-2 py-1 rounded text-xs ml-3">
                     {{ exp.duration }}
                   </span>
                 </div>
@@ -72,23 +71,22 @@
             </div>
           </div>
 
-          <!-- Edukacja -->
           <div>
-            <h4 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+            <h4 class="text-xl font-bold mb-6 flex items-center gap-3">
               <ion-icon name="school-outline" class="text-orange-400 text-2xl"></ion-icon>
               {{ $t('education') }}
             </h4>
 
             <div class="space-y-4">
               <div v-for="(edu, index) in educationCompact" :key="index"
-                   class="bg-gray-700/30 rounded-lg p-4 border border-gray-600/30 hover:bg-gray-700/40 transition-all">
+                   class="bg-gray-700/30 rounded-lg p-4 border border-gray-600/30 hover:bg-purple-700/50 transition-all">
                 <div class="flex items-start justify-between mb-2">
                   <div class="flex-1">
-                    <h5 class="text-white font-semibold">{{ edu.degree }}</h5>
+                    <h5 class="font-semibold">{{ edu.degree }}</h5>
                     <p class="text-orange-300 text-sm">{{ edu.school }}</p>
                     <p class="text-gray-400 text-xs">{{ edu.location }}</p>
                   </div>
-                  <span class="bg-purple-900/50 text-purple-200 px-2 py-1 rounded text-xs ml-3">
+                  <span class="bg-purple-900/50 px-2 py-1 rounded text-xs ml-3">
                     {{ edu.duration }}
                   </span>
                 </div>
@@ -104,7 +102,7 @@
 
         <!-- Certyfikaty -->
         <div class="mt-8 pt-6 border-t border-gray-600/30">
-          <h4 class="text-lg font-bold text-white mb-4 flex items-center gap-3">
+          <h4 class="text-lg font-bold mb-4 flex items-center gap-3">
             <ion-icon name="ribbon-outline" class="text-orange-400 text-xl"></ion-icon>
             {{ $t('additional_education') }}
           </h4>
@@ -145,7 +143,7 @@ const experiencesCompact = ref([
     position: 'Full-Stack Developer',
     company: 'Sempai, Białystok',
     duration: '2023.10 - 2025.07',
-    mainTech: ['Laravel', 'WordPress', 'Vue.js', 'React', 'Python']
+    mainTech: ['Laravel', 'WordPress', 'Vue.js', 'React', 'Python', 'RabbitMQ', 'REST API', locale.value == 'pl' ? 'Mikroserwisy' : 'Microservices']
   },
   {
     position: 'Full-Stack Developer',

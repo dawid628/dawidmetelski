@@ -1,12 +1,12 @@
 <template>
-  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-12">
+  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-2">
     <SideWidget/>
 
     <div class="flex-1 space-y-8">
       <div class="bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 rounded-xl p-8 shadow-2xl">
         <div class="flex flex-col gap-6">
           <div class="space-y-8">
-            <h2 class="text-4xl lg:text-5xl font-bold text-white leading-tight">
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
               {{ $t('hi_i_am') }}
               <span class="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Dawid Metelski
@@ -14,11 +14,11 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div v-for="service in services" :key="services.name"
-                   class="bg-gray-700/50 hover:bg-gray-700 rounded-lg p-4 transition-all hover:scale-105 border border-gray-600/50">
+                   class="bg-gray-700/50 hover:bg-purple-700/50 rounded-lg p-4 transition-all hover:scale-105 border border-gray-600/50">
                 <div class="text-center">
                   <div class="text-3xl mb-2" v-html="service.icon"></div>
-                  <p class="text-white text-sm font-medium">{{ $t(service.name) }}</p>
-                  <p class="text-white text-xs font-medium text-gray-500">{{ $t(service.description) }}</p>
+                  <p class="text-sm font-medium">{{ $t(service.name) }}</p>
+                  <p class="text-xs font-medium">{{ $t(service.description) }}</p>
                 </div>
               </div>
             </div>
@@ -28,22 +28,22 @@
 
       <!-- Umiejętności -->
       <div class="bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 rounded-xl p-8 shadow-2xl">
-        <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
           <ion-icon name="code-slash-outline" class="text-orange-400 text-3xl"></ion-icon>
           {{ $t('technologies') }}
         </h3>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div v-for="technology in technologies" :key="technology.name"
-               class="bg-gray-700/50 hover:bg-gray-700 rounded-lg p-4 transition-all hover:scale-105 border border-gray-600/50">
+               class="bg-gray-700/50 hover:bg-purple-700/50 rounded-lg p-4 transition-all hover:scale-105 border border-gray-600/50">
             <div class="text-center">
               <div class="text-3xl mb-2" v-html="technology.icon"></div>
-              <p class="text-white text-sm font-medium">{{ technology.name }}</p>
+              <p class="text-sm font-medium">{{ technology.name }}</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- TODO  języki i np biblioteki/narzędzia/skille jak deployment, git rabbit etc -->
+      <!-- TODO przemyslec języki i np biblioteki/narzędzia/skille jak deployment, git rabbit etc -->
 
       <!-- Statystyk -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -58,16 +58,19 @@
       <div
           class="bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-xl p-8 shadow-2xl">
         <div class="text-center space-y-4">
-          <h3 class="text-2xl font-bold text-white">{{ $t('ready_for_collab') }}</h3>
+          <h3 class="text-2xl font-bold">{{ $t('ready_for_collab') }}</h3>
           <p class="text-gray-300">
             {{ $t('contact_me_desc') }}
           </p>
-          <button
-              class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl">
+          <a
+              href="mailto:dawidmetelski00@gmail.com"
+              class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 px-8 py-3 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:border-orange-700 inline-block hover:text-purple-100"
+          >
             {{ $t('begin_collab') }}
-          </button>
+          </a>
         </div>
       </div>
+
     </div>
   </div>
 </template>

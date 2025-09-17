@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-12">
+  <div class="min-h-screen flex flex-col lg:flex-row gap-6 lg:p-6 mt-2">
 
     <div class="flex-1 space-y-8">
 
@@ -7,7 +7,7 @@
         <div
             v-for="project in projects"
             :key="project.id"
-            class="group bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 rounded-xl overflow-hidden shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 hover:scale-[1.02] relative flex flex-col">
+            class="group bg-gradient-to-br from-purple-950 to-gray-purple border border-purple-700 hover:border-orange-400 rounded-xl overflow-hidden shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 md:hover:scale-[1.02] relative flex flex-col">
 
           <div
               v-if="project.badge"
@@ -25,7 +25,7 @@
           </div>
 
           <div class="absolute top-4 left-4 z-10">
-            <div class="bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium border border-white/20">
+            <div class="bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium border border-white/20">
               {{ project.date }}
             </div>
           </div>
@@ -34,15 +34,15 @@
             <img
                 :src="project.image"
                 :alt="$t(project.name)"
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                class="w-full h-full object-cover transition-transform duration-300 md:group-hover:scale-110"
                 @error="handleImageError($event)"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-purple-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
 
-          <div class="p-8 space-y-6 flex-1 flex flex-col">
+          <div class="p-4 md:p-8 space-y-6 flex-1 flex flex-col">
             <div class="text-center flex-grow">
-              <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4 group-hover:text-orange-400 transition-colors">
+              <h3 class="text-2xl lg:text-3xl font-bold mb-4 transition-colors">
                 {{ $t(project.name) }}
               </h3>
               <p class="text-gray-300 text-base leading-relaxed">
@@ -55,7 +55,7 @@
                 <span
                     v-for="tech in project.technologies"
                     :key="tech"
-                    class="bg-gray-700/50 text-gray-200 text-sm px-3 py-2 rounded-lg border border-gray-600/50">
+                    class="bg-gray-700/50 text-gray-200 text-sm px-3 py-2 rounded-3xl">
                   {{ tech }}
                 </span>
               </div>
@@ -67,7 +67,7 @@
                   :href="project.demoUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:text-white flex-1 min-w-[140px] bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl">
+                  class="hover:text-white flex-1 min-w-[140px] max-w-[160px] bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-center py-3 px-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl">
                 <ion-icon name="eye-outline" class="mr-2"></ion-icon>
                 {{ $t('view_demo') }}
               </a>
@@ -79,7 +79,7 @@
                     :href="repo.url"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:text-white flex-1 min-w-[140px] bg-gray-700/50 hover:bg-gray-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-all border border-gray-600/50 hover:border-gray-500">
+                    class="hover:text-white flex-1 min-w-[140px] bg-gray-700/50 hover:bg-gray-700 text-center py-3 px-4 rounded-lg font-medium transition-all border border-gray-600/50 hover:border-gray-500">
                   <ion-icon name="logo-github" class="mr-2"></ion-icon>
                   {{ $t(repo.label) }}
                 </a>
@@ -90,7 +90,7 @@
                   :href="project.codeUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:text-white flex-1 min-w-[140px] bg-gray-700/50 hover:bg-gray-700 text-white text-center py-3 px-4 rounded-lg font-medium transition-all border border-gray-600/50 hover:border-gray-500">
+                  class="hover:text-white flex-1 min-w-[140px] max-w-[160px] bg-gray-700/50 hover:bg-gray-700 text-center py-3 px-4 rounded-lg font-medium transition-all border border-gray-600/50 hover:border-gray-500">
                 <ion-icon name="logo-github" class="mr-2"></ion-icon>
                 {{ $t('view_code') }}
               </a>
@@ -99,7 +99,7 @@
                   v-if="project.pdfUrl"
                   :href="project.pdfUrl"
                   download
-                  class="flex-1 min-w-[140px] bg-gradient-to-r from-green-600 to-blue-700 hover:from-green-700 hover:to-blue-800 text-white text-center py-3 px-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:text-white">
+                  class="flex-1 min-w-[140px] max-w-[160px] bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-center py-3 px-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:text-white">
                 <ion-icon name="download-outline" class="mr-2"></ion-icon>
                 {{ $t('download_thesis') }}
               </a>

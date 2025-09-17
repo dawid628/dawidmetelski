@@ -79,5 +79,6 @@ export default {
             title: "Serwis do Archiwizacji Danych Eksperymentalnych",
             description: "Aplikacja powstała z inicjatywy Warszawskiego Uniwersytetu Medycznego. Celem było przechowywanie eksperymentalnych danych medycznych w sposób bezpieczny i zgodny z wszelkimi regulacjami prawnymi. Przechowywanie danych odbywa się z wykorzystaniem prywatnej sieci blockchain, a komunikacja z nią odbywa się poprzez GUI stworzone we frameworku Flask."
         }
-    }
+    },
+    copyrights: "Wszystkie prawa zastrzeżone."
 };
