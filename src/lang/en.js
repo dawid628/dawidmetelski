@@ -9,7 +9,7 @@ export default {
     hi_i_am: "Hi, I'm",
     technologies: "Technologies",
     ready_for_collab: "Ready for collaboration?",
-    contact_me_desc: "Looking for experienced developer to your project? Contact me!",
+    contact_me_desc: "Do you need a developer to bring your project to life? Get in touch with me!",
     begin_collab: "Start collaboration",
     years_of_experience: "Years of experience",
     satisfied_clients: "Satisfied clients",
@@ -80,5 +80,6 @@ export default {
             description: "Developed at the initiative of the Warsaw Medical University, the application’s goal is to securely store experimental medical data in compliance with all legal regulations. Data storage is handled via a private blockchain network, with interaction through a GUI built using the Flask framework."
         }
     },
-    copyrights: "Copyright"
+    copyrights: "Copyright",
+    poland: "Poland"
 };

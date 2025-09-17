@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container text-purple-100">
+  <div class="app-container text-purple-100 font-sans">
     <div class="top-0 right-0 z-50 p-4 flex gap-2">
       <button
           @click="changeLanguage('pl')"

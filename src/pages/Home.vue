@@ -56,7 +56,7 @@
 
       <!-- Współpraca -->
       <div
-          class="bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-xl p-8 shadow-2xl">
+          class="bg-gradient-to-r from-purple-500/10 to-purple-600/10 border border-purple-700 rounded-xl p-8 shadow-2xl">
         <div class="text-center space-y-4">
           <h3 class="text-2xl font-bold">{{ $t('ready_for_collab') }}</h3>
           <p class="text-gray-300">

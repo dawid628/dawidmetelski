@@ -9,7 +9,7 @@ export default {
     hi_i_am: "Cześć, jestem",
     technologies: "Technologie",
     ready_for_collab: "Gotowy na współpracę?",
-    contact_me_desc: "Szukasz doświadczonego programisty do swojego projektu? Skontaktuj się ze mną!",
+    contact_me_desc: "Potrzebujesz programisty do realizacji Twojego projektu? Skontaktuj się ze mną!",
     begin_collab: "Rozpocznijmy współpracę",
     years_of_experience: "Lat doświadczenia",
     satisfied_clients: "Zadowolonych klientów",
@@ -80,5 +80,6 @@ export default {
             description: "Aplikacja powstała z inicjatywy Warszawskiego Uniwersytetu Medycznego. Celem było przechowywanie eksperymentalnych danych medycznych w sposób bezpieczny i zgodny z wszelkimi regulacjami prawnymi. Przechowywanie danych odbywa się z wykorzystaniem prywatnej sieci blockchain, a komunikacja z nią odbywa się poprzez GUI stworzone we frameworku Flask."
         }
     },
-    copyrights: "Wszystkie prawa zastrzeżone."
+    copyrights: "Wszystkie prawa zastrzeżone.",
+    poland: 'Polska'
 };
