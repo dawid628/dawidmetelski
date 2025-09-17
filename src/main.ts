@@ -10,7 +10,7 @@ import pl from './lang/pl.js'
 
 const i18n = createI18n({
     legacy: false,
-    locale: 'en',
+    locale: 'pl',
     fallbackLocale: 'en',
     messages: {
         en,
