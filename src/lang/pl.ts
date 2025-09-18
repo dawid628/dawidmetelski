@@ -43,7 +43,7 @@ export default {
     education: "Wykształcenie",
     additional_education: "Dodatkowe kwalifikacje",
     view_demo: "Demo",
-    view_code: "Sprawdź kod",
+    view_code: "Github",
     in_development: "W trakcie",
     bachelor_thesis: "Praca licencjacka",
     master_thesis: "Praca magisterska",

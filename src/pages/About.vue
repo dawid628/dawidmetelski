@@ -179,7 +179,6 @@ const educationCompact = ref([
 const certificatesCompact = ref([
   'Oracle Academy - Database Design and Programming with SQL',
   'Oracle Academy - Database Programming with PL/SQL',
-  'dorzucic potem cybersecurity'
 ])
 
 const handleResize = () => {

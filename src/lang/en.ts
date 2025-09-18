@@ -43,7 +43,7 @@ export default {
     education: "Education",
     additional_education: "Certificates",
     view_demo: "Demo",
-    view_code: "Code",
+    view_code: "Github",
     in_development: "In development",
     bachelor_thesis: "Bachelor Thesis",
     master_thesis: "Master Thesis",
