@@ -15,7 +15,7 @@
           class="w-10 h-10 bg-purple-900/30 border-2 border-purple-500/30 rounded-full backdrop-blur-sm hover:border-purple-400 hover:bg-purple-800/40 transition-all duration-300 flex items-center justify-center text-lg"
           title="English"
       >
-        🇺🇸
+        🇬🇧
       </button>
     </div>
 
